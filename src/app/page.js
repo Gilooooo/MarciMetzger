@@ -1,3 +1,4 @@
+import AboutPage from "./_components/AboutUs";
 import FindHome from "./_components/FindHome";
 import Hero from "./_components/Hero";
 import NavBar from "./_components/NavBar";
@@ -8,6 +9,7 @@ export default function Home(){
       <NavBar />
       <Hero />
       <FindHome />
+      <AboutPage/>
     </>
   )
 }
