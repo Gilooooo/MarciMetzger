@@ -9,7 +9,7 @@ export default function Hero() {
         >
           PAHRUMP REALTOR
         </h1>
-        <p className="text-xl text-gray-300">
+        <p className="sm:text-xl text-md text-gray-300">
           Nearly 30 years helping Pahrump families buy and sell with confidence.
           Local expertise meets modern marketing.
         </p>
