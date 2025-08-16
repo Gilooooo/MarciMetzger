@@ -132,7 +132,7 @@ export default function Properties() {
         <div className="rounded-[5px] bg-white text-[#272726] sm:flex hidden shadow-2xl  flex-col ">
           <div className="relative">
             <Image
-              src="/House4.webp"
+              src="/House4  .webp"
               alt="Lake View Drive property"
               width={400}
               height={192}

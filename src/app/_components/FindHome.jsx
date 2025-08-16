@@ -66,7 +66,7 @@ export default function FindHome() {
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">House</span>
             {selectedProperty === 'house' && (
-              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+              <div className="absolute sm:bottom-5 bottom-2 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
             )}
           </button>
           <button 
@@ -78,7 +78,7 @@ export default function FindHome() {
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">Condominium</span>
             {selectedProperty === 'condo' && (
-              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+              <div className="absolute sm:bottom-5 bottom-2 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
             )}
           </button>
           <button 
@@ -90,7 +90,7 @@ export default function FindHome() {
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">Town House</span>
             {selectedProperty === 'townhouse' && (
-              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+              <div className="absolute sm:bottom-5 bottom-2 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
             )}
           </button>
           <button 
@@ -102,7 +102,7 @@ export default function FindHome() {
             </span>
             <span className="text-[clamp(0.6rem,2vw,1.2rem)]">Lots/Lands</span>
             {selectedProperty === 'lots' && (
-              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+              <div className="absolute sm:bottom-5 bottom-2 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
             )}
           </button>
           <button 
@@ -114,7 +114,7 @@ export default function FindHome() {
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">Mobile Home</span>
             {selectedProperty === 'mobile' && (
-              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+              <div className="absolute sm:bottom-5 bottom-2 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
             )}
           </button>
           {/* Hidden */}
@@ -128,7 +128,7 @@ export default function FindHome() {
               </span>
               Lots/Lands
               {selectedProperty === 'lots' && (
-                <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+                <div className="absolute sm:bottom-5 bottom-2 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
               )}
             </button>
             <button 
@@ -140,7 +140,7 @@ export default function FindHome() {
               </span>
               Mobile Home
               {selectedProperty === 'mobile' && (
-                <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+                <div className="absolute sm:bottom-5 bottom-2 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
               )}
             </button>
           </div>
@@ -150,7 +150,7 @@ export default function FindHome() {
           Price Range
         </label>
         <RangePrice />
-        <div className="max-w-5xl -mx-6 py-0.5 text-xs bg-[#D9D9D9] shine-contact">
+        <div className="max-w-5xl sm:-mx-6 -mx-3 py-0.5 text-xs bg-[#D9D9D9] shine-contact">
           {dropdown ? (
             <button
               onClick={(e) => {
