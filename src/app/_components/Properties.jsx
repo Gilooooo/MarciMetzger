@@ -15,7 +15,7 @@ export default function Properties() {
         <div className="rounded-[5px] bg-white text-[#272726] shadow-2xl flex flex-col ">
           <div className="relative">
             <Image
-              src="/Gilo.png"
+              src="/House1.webp"
               alt="Desert View Drive property"
               width={400}
               height={192}
@@ -54,7 +54,7 @@ export default function Properties() {
         <div className="rounded-[5px] bg-white text-[#272726] shadow-2xl flex flex-col">
           <div className="relative">
             <Image
-              src="/Gilo.png"
+              src="/House2.webp"
               alt="Mountain View Drive property"
               width={400}
               height={192}
@@ -93,7 +93,7 @@ export default function Properties() {
         <div className="rounded-[5px] bg-white text-[#272726] shadow-2xl flex flex-col ">
           <div className="relative">
             <Image
-              src="/Gilo.png"
+              src="/House3.webp"
               alt="Forest View Drive property"
               width={400}
               height={192}
@@ -132,7 +132,7 @@ export default function Properties() {
         <div className="rounded-[5px] bg-white text-[#272726] sm:flex hidden shadow-2xl  flex-col ">
           <div className="relative">
             <Image
-              src="/Gilo.png"
+              src="/House4.webp"
               alt="Lake View Drive property"
               width={400}
               height={192}
