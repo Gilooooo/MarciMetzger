@@ -1,4 +1,5 @@
 import { Bath, Bed, MapPin, Square } from "lucide-react";
+import Image from "next/image";
 
 export default function Properties() {
   return (
@@ -13,10 +14,13 @@ export default function Properties() {
       <section className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 max-w-7xl m-auto">
         <div className="rounded-[5px] bg-white text-[#272726] shadow-2xl flex flex-col ">
           <div className="relative">
-            <img
+            <Image
               src="/Gilo.png"
-              alt=""
+              alt="Desert View Drive property"
+              width={400}
+              height={192}
               className="w-full h-48 object-cover rounded-[5px]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             <p className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-[#D9D9D9]">
               $830,000
@@ -49,10 +53,13 @@ export default function Properties() {
         </div>
         <div className="rounded-[5px] bg-white text-[#272726] shadow-2xl flex flex-col">
           <div className="relative">
-            <img
+            <Image
               src="/Gilo.png"
-              alt=""
+              alt="Mountain View Drive property"
+              width={400}
+              height={192}
               className="w-full h-48 object-cover rounded-[5px]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             <p className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-[#D9D9D9]">
               $260,000
@@ -85,10 +92,13 @@ export default function Properties() {
         </div>
         <div className="rounded-[5px] bg-white text-[#272726] shadow-2xl flex flex-col ">
           <div className="relative">
-            <img
+            <Image
               src="/Gilo.png"
-              alt=""
+              alt="Forest View Drive property"
+              width={400}
+              height={192}
               className="w-full h-48 object-cover rounded-[5px]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             <p className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-[#D9D9D9]">
               $300,000
@@ -121,10 +131,13 @@ export default function Properties() {
         </div>
         <div className="rounded-[5px] bg-white text-[#272726] sm:flex hidden shadow-2xl  flex-col ">
           <div className="relative">
-            <img
+            <Image
               src="/Gilo.png"
-              alt=""
+              alt="Lake View Drive property"
+              width={400}
+              height={192}
               className="w-full h-48 object-cover rounded-[5px]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             <p className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-[#D9D9D9]">
               $450,000

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ export default function NavBar() {
   return (
     <nav className="bg-white p-4 text-[#272726] sticky top-0 z-50 shadow-md">
       <div className="flex items-center justify-between sm:px-8 px-2">
-        <span><img src="/Marci.svg" alt="" className="w-40"/></span>
+        <span><Image src="/Marci.svg" alt="Marci Metzger Logo" width={160} height={40} className="w-40" priority /></span>
         <ul className="sm:flex hidden space-x-4">
           <li><a href="#home" className="hover:text-[#707070]">Home</a></li>
           <li><a href="#about" className="hover:text-[#707070]">About Us</a></li>

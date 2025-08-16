@@ -1,14 +1,19 @@
 import { Award, House, Star, Users2 } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <main className="p-3 py-12 bg-white text-[#272726]">
       <h1 className="sm:text-3xl text-2xl text-center py-4">About Us</h1>
       <section className="lg:p-9 sm:px-5 sm:py-8 px-2 grid lg:grid-cols-2 grid-cols-1 gap-1 sm:gap-3.5 items-center max-w-7xl m-auto">
-        <img
+        <Image
           src="/MarciPic.png"
           alt="Marci Metzger"
-          className="order-1 lg:order-2 justify-self-center sm:h-[500px] my-5 sm:rounded-[5px] rounded-lg shadow-2xl shadow-gray-800"
+          width={400}
+          height={500}
+          className="order-1 lg:order-2 justify-self-center lg:h-[500px] my-5 sm:rounded-[5px] rounded-lg shadow-2xl shadow-gray-800"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          priority
         />
         <div className="lg:order-1 order-2">
           <div className=" space-y-4">

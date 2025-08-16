@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Image from "next/image";
 
 export default function StatisfiedCustomer() {
   return (
@@ -26,9 +27,11 @@ export default function StatisfiedCustomer() {
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center gap-1">
               <div className="border border-amber-50 rounded-[5px] w-9 h-9 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Gilo.png"
-                  alt=""
+                  alt="Kayrie Suzuki"
+                  width={36}
+                  height={36}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
@@ -37,9 +40,11 @@ export default function StatisfiedCustomer() {
                        <div className="flex items-center gap-1">
               <span>$281K</span>
               <div className="border border-amber-50 rounded-[5px] w-8 h-8 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Marci.png"
-                  alt=""
+                  alt="Marci Metzger"
+                  width={32}
+                  height={32}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
@@ -60,9 +65,11 @@ export default function StatisfiedCustomer() {
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center gap-1">
               <div className="border border-amber-50 rounded-[5px] w-9 h-9 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Gilo.png"
-                  alt=""
+                  alt="Juliet Hibana"
+                  width={36}
+                  height={36}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
@@ -71,9 +78,11 @@ export default function StatisfiedCustomer() {
                        <div className="flex items-center gap-1">
               <span>$460K</span>
               <div className="border border-amber-50 rounded-[5px] w-8 h-8 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Marci.png"
-                  alt=""
+                  alt="Marci Metzger"
+                  width={32}
+                  height={32}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
@@ -94,9 +103,11 @@ export default function StatisfiedCustomer() {
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center gap-1">
               <div className="border border-amber-50 rounded-[5px] w-9 h-9 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Gilo.png"
-                  alt=""
+                  alt="Marci Cabral"
+                  width={36}
+                  height={36}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
@@ -105,9 +116,11 @@ export default function StatisfiedCustomer() {
                        <div className="flex items-center gap-1">
               <span>$360K</span>
               <div className="border border-amber-50 rounded-[5px] w-8 h-8 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Marci.png"
-                  alt=""
+                  alt="Marci Metzger"
+                  width={32}
+                  height={32}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
@@ -128,9 +141,11 @@ export default function StatisfiedCustomer() {
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center gap-1">
               <div className="border border-amber-50 rounded-[5px] w-9 h-9 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Gilo.png"
-                  alt=""
+                  alt="Deborah Mills"
+                  width={36}
+                  height={36}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
@@ -139,9 +154,11 @@ export default function StatisfiedCustomer() {
             <div className="flex items-center gap-1">
               <span>$300K</span>
               <div className="border border-amber-50 rounded-[5px] w-8 h-8 flex items-center justify-center p-0.5 bg-[#D9D9D9]">
-                <img
+                <Image
                   src="/Marci.png"
-                  alt=""
+                  alt="Marci Metzger"
+                  width={32}
+                  height={32}
                   className="h-full w-full object-cover rounded-[3px]"
                 />
               </div>
