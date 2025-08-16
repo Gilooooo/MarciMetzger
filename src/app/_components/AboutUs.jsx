@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main className="p-3 py-12 bg-white text-[#272726]">
-      <h1 className="sm:text-3xl text-2xl text-center py-4">About Us</h1>
+      <h1 className="sm:text-4xl text-3xl text-center py-4">About Us</h1>
       <section className="lg:p-9 sm:px-5 sm:py-8 px-2 grid lg:grid-cols-2 grid-cols-1 gap-1 sm:gap-3.5 items-center max-w-7xl m-auto">
         <Image
           src="/MarciPic.png"
@@ -26,7 +26,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 mt-4 text-[#272726] w-full">
-            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-1">
+            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 sm:shadow-lg shadow-md transition-transform duration-300 hover:scale-105 hover:rotate-1">
               <span>
                 <Users2 size={36} className="sm:w-10 sm:h-10 w-9 h-9" />
               </span>
@@ -34,7 +34,7 @@ export default function AboutPage() {
               <h3 className="text-base sm:text-xl">Clients Helped</h3>
               <span className="text-xs sm:text-sm">in 2021</span>
             </div>
-            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 relative lg:top-8 shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-1">
+            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 relative lg:top-8 sm:shadow-lg shadow-md transition-transform duration-300 hover:scale-105 hover:-rotate-1">
               <span>
                 <House size={36} className="sm:w-10 sm:h-10 w-9 h-9" />
               </span>
@@ -42,7 +42,7 @@ export default function AboutPage() {
               <h3 className="text-base sm:text-xl">Sale volume</h3>
               <span className="text-xs sm:text-sm">closed deals</span>
             </div>
-            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-1">
+            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 sm:shadow-lg shadow-md transition-transform duration-300 hover:scale-105 hover:rotate-1">
               <span>
                 <Award size={36} className="sm:w-10 sm:h-10 w-9 h-9" />
               </span>
@@ -50,7 +50,7 @@ export default function AboutPage() {
               <h3 className="text-base sm:text-xl">Experience</h3>
               <span className="text-xs sm:text-sm">in nevada</span>
             </div>
-            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 relative lg:top-8 shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-1">
+            <div className="flex flex-col justify-center gap-1 sm:gap-3 p-3 sm:p-4 bg-[#D9D9D9] rounded-[5px] w-full min-w-0 relative lg:top-8 sm:shadow-lg shadow-md transition-transform duration-300 hover:scale-105 hover:-rotate-1">
               <span>
                 <Star size={36} fill="#272726" className="sm:w-10 sm:h-10 w-9 h-9" />
               </span>

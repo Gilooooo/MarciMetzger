@@ -16,12 +16,30 @@ import { useState } from "react";
 
 export default function FindHome() {
   const [dropdown, setDropdown] = useState(false);
+  const [selectedProperty, setSelectedProperty] = useState(null);
+  const [selectedAmenities, setSelectedAmenities] = useState([]);
+  
   const toggleDropdown = () => {
     setDropdown(!dropdown);
   };
+  
+  const handlePropertySelect = (e, propertyType) => {
+    e.preventDefault();
+    setSelectedProperty(propertyType);
+  };
+  
+  const handleAmenitySelect = (e, amenity) => {
+    e.preventDefault();
+    setSelectedAmenities(prev => 
+      prev.includes(amenity) 
+        ? prev.filter(item => item !== amenity)
+        : [...prev, amenity]
+    );
+  };
+
   return (
     <main className="bg-[#D9D9D9] sm:p-8 sm:py-12 py-12 p-5">
-      <h1 className="text-[#272726] text-center sm:text-3xl text-2xl mb-10">
+      <h1 className="text-[#272726] text-center sm:text-4xl text-3xl mb-10">
         Begin Your Journey Home
       </h1>
       <form className="max-w-5xl m-auto flex flex-col justify-center space-y-2 bg-[#f3f3f3] sm:p-6 p-3 rounded-[10px] shadow-lg text-[#272726]">
@@ -39,60 +57,91 @@ export default function FindHome() {
         </label>
         {/* Properties */}
         <div className="rounded-[5px] grid sm:grid-cols-5 grid-cols-3  gap-2 text-center">
-          <button className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center rounded-[5px]">
+          <button 
+            onClick={(e) => handlePropertySelect(e, 'house')}
+            className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center rounded-[5px] relative hover:shadow-xl"
+          >
             <span>
               <House />
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">House</span>
+            {selectedProperty === 'house' && (
+              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+            )}
           </button>
-          <button className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center rounded-[5px]">
+          <button 
+            onClick={(e) => handlePropertySelect(e, 'condo')}
+            className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center rounded-[5px] relative hover:shadow-xl"
+          >
             <span>
               <Building />
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">Condominium</span>
+            {selectedProperty === 'condo' && (
+              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+            )}
           </button>
-          <button className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center rounded-[5px]">
+          <button 
+            onClick={(e) => handlePropertySelect(e, 'townhouse')}
+            className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center rounded-[5px] relative hover:shadow-xl"
+          >
             <span>
               <Building />
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">Town House</span>
+            {selectedProperty === 'townhouse' && (
+              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+            )}
           </button>
-          <button className="sm:flex hidden bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex-col items-center justify-center rounded-[5px]">
+          <button 
+            onClick={(e) => handlePropertySelect(e, 'lots')}
+            className="sm:flex hidden bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex-col items-center justify-center rounded-[5px] relative hover:shadow-xl"
+          >
             <span>
               <TreePine />
             </span>
             <span className="text-[clamp(0.6rem,2vw,1.2rem)]">Lots/Lands</span>
+            {selectedProperty === 'lots' && (
+              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+            )}
           </button>
-          <button className="sm:flex hidden bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex-col items-center justify-center rounded-[5px]">
+          <button 
+            onClick={(e) => handlePropertySelect(e, 'mobile')}
+            className="sm:flex hidden bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex-col items-center justify-center rounded-[5px] relative hover:shadow-xl"
+          >
             <span>
               <Warehouse />
             </span>
             <span className="text-[clamp(0.6rem,2vw,1rem)]">Mobile Home</span>
+            {selectedProperty === 'mobile' && (
+              <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+            )}
           </button>
-          {/* Hidden for small screens */}
-          {/* <div className="xs:hidden sm:hidden flex justify-center items-center gap-2 w-full col-span-2">
-            <button className="flex bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex-col items-center justify-center grow">
-              <span>
-                <Warehouse />
-              </span>
-              <span className="text-[clamp(0.6rem,2vw,1rem)]">
-                Mobile Home
-              </span>
-            </button>
-          </div> */}
           {/* Hidden */}
           <div className="flex justify-center items-center gap-2 sm:hidden col-span-3 w-full">
-            <button className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center grow-1 text-[clamp(0.6rem,2vw,1rem)]">
+            <button 
+              onClick={(e) => handlePropertySelect(e, 'lots')}
+              className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center grow-1 text-[clamp(0.6rem,2vw,1rem)] relative hover:shadow-xl rounded-[5px]"
+            >
               <span>
                 <TreePine />
               </span>
               Lots/Lands
+              {selectedProperty === 'lots' && (
+                <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+              )}
             </button>
-            <button className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center grow-1 text-[clamp(0.6rem,2vw,1rem)]">
+            <button 
+              onClick={(e) => handlePropertySelect(e, 'mobile')}
+              className="bg-[#D9D9D9] lg:p-9 md:p-7 sm:p-6 py-5 flex flex-col items-center justify-center grow-1 text-[clamp(0.6rem,2vw,1rem)] relative hover:shadow-xl rounded-[5px]"
+            >
               <span>
                 <Warehouse />
               </span>
               Mobile Home
+              {selectedProperty === 'mobile' && (
+                <div className="absolute bottom-5 w-2 h-2 bg-transparent border border-black rounded-full animate-pulse"></div>
+              )}
             </button>
           </div>
         </div>
@@ -101,7 +150,7 @@ export default function FindHome() {
           Price Range
         </label>
         <RangePrice />
-        <div className="max-w-5xl -mx-6 py-0.5 text-xs bg-[#D9D9D9]">
+        <div className="max-w-5xl -mx-6 py-0.5 text-xs bg-[#D9D9D9] shine-contact">
           {dropdown ? (
             <button
               onClick={(e) => {
@@ -178,23 +227,7 @@ export default function FindHome() {
             <div className="flex flex-col items-center w-full">
               <label className="">Square Feet</label>
               <div className="flex w-full relative items-center">
-                <select
-                  name="SquareFeet"
-                  id="bed"
-                  className="bg-[#D9D9D9] w-full px-2 py-1 rounded-[5px] focus:outline-none appearance-none"
-                >
-                  <option value={null} hidden>
-                    Any
-                  </option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-                <ChevronDown
-                  size={16}
-                  className="text-blue-400 absolute right-0 me-2"
-                />
+               <input type="number" placeholder="Square Meters" className="bg-[#D9D9D9] w-full px-2 py-1 rounded-[5px] focus:outline-none appearance-none"/>
               </div>
             </div>
           </div>
@@ -202,28 +235,58 @@ export default function FindHome() {
             <Sparkles />
             Amenities & Features
           </label>
-          <div className="grid sm:grid-cols-5 grid-cols-3 gap-3">
-            <button className="py-1 w-full rounded-full bg-[#D9D9D9] text-[clamp(0.6rem,2vw,1rem)]">
+          <div className="grid sm:grid-cols-5 grid-cols-3 gap-3 py-2">
+            <button 
+              onClick={(e) => handleAmenitySelect(e, 'balcony')}
+              className={`py-1 w-full rounded-full text-[clamp(0.6rem,2vw,1rem)] transition-colors duration-200 hover:shadow-md ${
+                selectedAmenities.includes('balcony') ? 'bg-[#272726] text-white' : 'bg-[#D9D9D9]'
+              }`}
+            >
               Balcony
             </button>
-            <button className="py-1 w-full rounded-full bg-[#D9D9D9] text-[clamp(0.6rem,2vw,1rem)]">
-              Fire PLace
+            <button 
+              onClick={(e) => handleAmenitySelect(e, 'fireplace')}
+              className={`py-1 w-full rounded-full text-[clamp(0.6rem,2vw,1rem)] transition-colors duration-200 hover:shadow-md ${
+                selectedAmenities.includes('fireplace') ? 'bg-[#272726] text-white' : 'bg-[#D9D9D9]'
+              }`}
+            >
+              Fire Place
             </button>
-            <button className="py-1 w-full rounded-full bg-[#D9D9D9] text-[clamp(0.6rem,2vw,1rem)]">
+            <button 
+              onClick={(e) => handleAmenitySelect(e, 'garden')}
+              className={`py-1 w-full rounded-full text-[clamp(0.6rem,2vw,1rem)] transition-colors duration-200 hover:shadow-md ${
+                selectedAmenities.includes('garden') ? 'bg-[#272726] text-white' : 'bg-[#D9D9D9]'
+              }`}
+            >
               Garden
             </button>
-            <button className="py-1 w-full rounded-full bg-[#D9D9D9] text-[clamp(0.6rem,2vw,1rem)]">
+            <button 
+              onClick={(e) => handleAmenitySelect(e, 'garage')}
+              className={`py-1 w-full rounded-full text-[clamp(0.6rem,2vw,1rem)] transition-colors duration-200 hover:shadow-md ${
+                selectedAmenities.includes('garage') ? 'bg-[#272726] text-white' : 'bg-[#D9D9D9]'
+              }`}
+            >
               Garage
             </button>
-            <button className="py-1 w-full rounded-full bg-[#D9D9D9] text-[clamp(0.6rem,2vw,1rem)]">
+            <button 
+              onClick={(e) => handleAmenitySelect(e, 'pool')}
+              className={`py-1 w-full rounded-full text-[clamp(0.6rem,2vw,1rem)] transition-colors duration-200 hover:shadow-md ${
+                selectedAmenities.includes('pool') ? 'bg-[#272726] text-white' : 'bg-[#D9D9D9]'
+              }`}
+            >
               Pool
             </button>
-            <button className="py-1 w-full rounded-full bg-[#D9D9D9] text-[clamp(0.6rem,2vw,1rem)]">
+            <button 
+              onClick={(e) => handleAmenitySelect(e, 'parking')}
+              className={`py-1 w-full rounded-full text-[clamp(0.6rem,2vw,1rem)] transition-colors duration-200 hover:shadow-md ${
+                selectedAmenities.includes('parking') ? 'bg-[#272726] text-white' : 'bg-[#D9D9D9]'
+              }`}
+            >
               Parking space
             </button>
           </div>
         </div>
-        <button className="px-4 py-1 flex bg-[#D9D9D9] w-fit rounded-[5px] self-end gap-2 shine-button">
+        <button className="px-4 py-1 flex bg-[#D9D9D9] w-fit rounded-[5px] self-end gap-2 shine-button hover:shadow-md">
           <Search />
           Find Properties
         </button>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Properties() {
   return (
     <main className="bg-[#D9D9D9] sm:p-8 sm:py-12 py-12 p-5">
-      <h1 className="sm:text-3xl text-2xl text-[#272726] text-center pt-4">
+      <h1 className="sm:text-4xl text-3xl text-[#272726] text-center pt-4">
         Handpicked Properties
       </h1>
       <p className="text-md text-[#272726] mb-4 text-center pb-4">
@@ -46,7 +46,7 @@ export default function Properties() {
                 <span className="text-md mt-0.5">2,150 sqft</span>
               </span>
             </p>
-            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button">
+            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button hover:shadow-md">
               View Details
             </button>
           </div>
@@ -85,7 +85,7 @@ export default function Properties() {
                 <span className="text-md mt-0.5">2,150 sqft</span>
               </span>
             </p>
-            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button">
+            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button hover:shadow-md ">
               View Details
             </button>
           </div>
@@ -124,7 +124,7 @@ export default function Properties() {
                 <span className="text-md mt-0.5">2,150 sqft</span>
               </span>
             </p>
-            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button">
+            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button hover:shadow-md">
               View Details
             </button>
           </div>
@@ -163,7 +163,7 @@ export default function Properties() {
                 <span className="text-md mt-0.5">2,150 sqft</span>
               </span>
             </p>
-            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button">
+            <button className="w-full py-1 px-3 bg-[#D9D9D9] rounded-[5px] mt-10 shine-button hover:shadow-md">
               View Details
             </button>
           </div>

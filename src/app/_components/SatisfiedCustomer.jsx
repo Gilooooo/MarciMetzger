@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function StatisfiedCustomer() {
   return (
     <main className="bg-[#D9D9D9] sm:p-8 sm:py-12 py-12 p-5">
-      <h1 className="text-[#272726] text-center sm:text-3xl text-2xl">
+      <h1 className="text-[#272726] text-center sm:text-4xl text-3xl">
         Satisfied Clients
       </h1>
 

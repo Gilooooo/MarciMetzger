@@ -21,7 +21,7 @@ export default function Hero() {
         quality={70}
       />
       <div className="absolute inset-0 bg-black/20" />
-      <section className="relative z-10 sm:p-9 px-2 py-9 h-full flex flex-col justify-center sm:max-w-5xl">
+      <section className="relative z-10 sm:p-10 px-2 py-9 h-full flex flex-col justify-center lg:max-w-7xl sm:max-w-6xl">
         <p className="sm:text-3xl text-lg font-medium">MARCI METZGER - THE RIDGE REALTY GROUP</p>
         <h1 className="sm:text-8xl text-4xl font-serif font-bold">
           PAHRUMP REALTOR

@@ -3,7 +3,7 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 export default function ContactPage() {
   return (
     <main className="p-5 py-12 bg-white text-[#272726]">
-      <h1 className="text-[#272726] text-center sm:text-3xl text-2xl pb-9">
+      <h1 className="text-[#272726] text-center sm:text-4xl text-3xl pb-9">
         Contact Us
       </h1>
       <section className="max-w-7xl m-auto flex xl:flex-row flex-col xl:items-center gap-5 xl:px-0 sm:px-5">

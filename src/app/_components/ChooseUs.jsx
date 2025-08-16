@@ -3,7 +3,7 @@ import { MapPin, Medal, Megaphone, Shield, Users2 } from "lucide-react";
 export default function ChooseUs() {
   return (
     <main className="bg-white sm:p-8 sm:py-12 py-12 p-5">
-      <h1 className="text-[#272726] text-center sm:text-3xl text-2xl">
+      <h1 className="text-[#272726] text-center sm:text-4xl text-3xl">
         Why Choose Us
       </h1>
       <p className="text-md text-[#272726] mb-4 text-center pb-4">

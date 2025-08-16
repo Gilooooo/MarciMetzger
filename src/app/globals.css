@@ -30,10 +30,16 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* Add this block to your CSS */
-.scroll-offset {
-  scroll-margin-top: 6rem; /* Adjust this value to match your nav height */
-}
+ @layer base {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    appearance: textfield;
+  }
+} 
 
 @keyframes shine {
   0% {
