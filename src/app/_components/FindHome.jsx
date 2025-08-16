@@ -20,7 +20,7 @@ export default function FindHome() {
     setDropdown(!dropdown);
   };
   return (
-    <main className="bg-[#D9D9D9] sm:p-8 p-5">
+    <main className="bg-[#D9D9D9] sm:p-8 sm:py-12 py-12 p-5">
       <h1 className="text-[#272726] text-center sm:text-3xl text-2xl mb-10">
         Begin Your Journey Home
       </h1>
