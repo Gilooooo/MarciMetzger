@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LoadingWrapper from "./_components/LoadingWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
         style={{ fontFamily: "'Century Gothic', 'Arial', sans-serif" }}
       >
-        {children}
+        <LoadingWrapper>{children}</LoadingWrapper>
       </body>
     </html>
   );

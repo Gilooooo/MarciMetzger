@@ -8,12 +8,21 @@ export default function Hero() {
         alt="Pahrump landscape"
         fill
         priority
-        className="object-cover object-center sm:object-left"
-        sizes="100vw"
+        className="object-cover object-center sm:object-left sm:block hidden"
+        sizes="(min-width: 640px) 100vw, 0px"
+      />
+      <Image
+        src="/Gilo.webp"
+        alt="Pahrump landscape"
+        fill
+        priority
+        className="object-cover object-center sm:hidden block"
+        sizes="(max-width: 639px) 100vw, 0px"
+        quality={70}
       />
       <div className="absolute inset-0 bg-black/20" />
       <section className="relative z-10 sm:p-9 px-2 py-9 h-full flex flex-col justify-center sm:max-w-5xl">
-        <p className="sm:text-3xl text-lg font-medium">MARCI METZGER - THE RIDGE REALITY GROUP</p>
+        <p className="sm:text-3xl text-lg font-medium">MARCI METZGER - THE RIDGE REALTY GROUP</p>
         <h1 className="sm:text-8xl text-4xl font-serif font-bold">
           PAHRUMP REALTOR
         </h1>
