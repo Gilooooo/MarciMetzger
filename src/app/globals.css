@@ -56,7 +56,32 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.801), transparent);
   animation: shine 3s ease-in-out infinite;
   transform: skewX(25deg);
+}
+
+.shine-contact{
+  position: relative;
+  overflow: hidden;
+}
+.shine-contact::before{
+  content: ' ';
+  position:absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(58, 58, 58, 0.301), transparent);
+  animation: shines 3s ease-in-out infinite;
+  animation-delay: 5s;
+  transform: skewX(25deg);
+}
+
+@keyframes shines {
+  0%{
+    right: 100%;
+  }100%{
+    right: -100%;
+  }
 }

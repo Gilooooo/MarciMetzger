@@ -15,7 +15,7 @@ export default function ContactPage() {
             you through every step of the process.
           </p>
           <div className="flex flex-col sm:gap-2 gap-1">
-            <div className="p-5 bg-[#D9D9D9] rounded-[5px] mt-3 flex place-items-center gap-3 transition-transform duration-300 hover:scale-105 hover:rotate-1 shadow-lg">
+            <div className="p-5 bg-[#D9D9D9] rounded-[5px] mt-3 flex place-items-center gap-3 transition-transform duration-300 hover:scale-105 hover:rotate-1 shadow-lg shine-contact">
               <span className="p-3 bg-amber-50 rounded-2xl">
                 <Phone size={28} />
               </span>
@@ -27,7 +27,7 @@ export default function ContactPage() {
                 </span>
               </div>
             </div>
-            <div className="p-5 bg-[#D9D9D9] rounded-[5px] mt-3 flex place-items-center gap-3 transition-transform duration-300 hover:scale-105 hover:-rotate-1 shadow-lg">
+            <div className="p-5 bg-[#D9D9D9] rounded-[5px] mt-3 flex place-items-center gap-3 transition-transform duration-300 hover:scale-105 hover:-rotate-1 shadow-lg shine-contact">
               <span className="p-3 bg-amber-50 rounded-2xl">
                 <MessageCircle size={28} />
               </span>
@@ -39,7 +39,7 @@ export default function ContactPage() {
                 </span>
               </div>
             </div>
-            <div className="p-5 bg-[#D9D9D9] rounded-[5px] mt-3 flex place-items-center gap-3 transition-transform duration-300 hover:scale-105 hover:rotate-1 shadown-lg">
+            <div className="p-5 bg-[#D9D9D9] rounded-[5px] mt-3 flex place-items-center gap-3 transition-transform duration-300 hover:scale-105 hover:rotate-1 shadown-lg shine-contact">
               <span className="p-3 bg-amber-50 rounded-2xl">
                 <Mail size={28} />
               </span>

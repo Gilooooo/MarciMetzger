@@ -223,7 +223,7 @@ export default function FindHome() {
             </button>
           </div>
         </div>
-        <button className="px-4 py-1 flex bg-[#D9D9D9] w-fit rounded-[5px] self-end gap-2">
+        <button className="px-4 py-1 flex bg-[#D9D9D9] w-fit rounded-[5px] self-end gap-2 shine-button">
           <Search />
           Find Properties
         </button>
